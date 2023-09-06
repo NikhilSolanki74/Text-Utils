@@ -1,3 +1,15 @@
+.form-control {
+  border-color: rgb(0, 108, 4); /* Red border color */
+}
+#koko{
+  
+  color: rgb(2, 97, 10);
+  background-color: rgb(235, 242, 241);
+  border-radius: 4px;
+  border: 1px solid rgb(0, 108, 4);
+  padding: 1%;
+  overflow-wrap: break-word;
+}
 .App {
   text-align: center;
 }
