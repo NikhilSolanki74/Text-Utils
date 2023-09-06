@@ -39,9 +39,9 @@ export default function SearchBox(props) {
   
 </div>
 <button className="btn btn-success " onClick={handleUpClick}>Change into Uppercase</button>
-<button className="btn btn-primary ms-2 " onClick={lowerCase}>Change into Lowercase</button>
-<button className="btn btn-warning ms-2 " onClick={nks}>Remove Extra Space</button>
-<button className="btn btn-danger ms-2 " onClick={emt}>Clear Text</button>
+<button className="btn btn-primary ms-2 mt-1 " onClick={lowerCase}>Change into Lowercase</button>
+<button className="btn btn-warning ms-2 mt-1" onClick={nks}>Remove Extra Space</button>
+<button className="btn btn-danger ms-2 mt-1" onClick={emt}>Clear Text</button>
 </div>
    <div className="container">
     <h3 className='mt-3'>Text Summary</h3>
