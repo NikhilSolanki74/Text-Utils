@@ -28,20 +28,20 @@ export default function SearchBox(props) {
     setText(p);
   }
 
-  const [text , setText] = useState('Enter Text Here');
+  const [text , setText] = useState('');
   
   return (
     <div class={` bg-${props.darkMode} text-${props.darkMode === 'dark' ? 'white' : 'dark'}  rounded  pr-3 pb-3 pl-3 `}>
   <div className='container'>          
  <h3 className='mt-5 pt-5'>Enter Your Text Below</h3>
 <div className="mb-3">
-  <textarea className={` form-control bg-${props.darkMode === 'dark' ? 'black' : 'white'} text-${props.darkMode === 'dark' ? 'white' : 'black'} `}  value={text}  onChange={handleOnChange} id="myBox" rows="7"  ></textarea>
+  <textarea  className={` form-control bg-${props.darkMode === 'dark' ? 'black' : 'white'} text-${props.darkMode === 'dark' ? 'white' : 'black'} `}  value={text}  onChange={handleOnChange} id="myBox" rows="7"  ></textarea>
   
 </div>
-<button className="btn btn-success " onClick={handleUpClick}>Change into Uppercase</button>
-<button className="btn btn-primary ms-2 mt-1 " onClick={lowerCase}>Change into Lowercase</button>
-<button className="btn btn-warning ms-2 mt-1" onClick={nks}>Remove Extra Space</button>
-<button className="btn btn-danger ms-2 mt-1" onClick={emt}>Clear Text</button>
+<button disabled={text.length===0} className="btn btn-success " onClick={handleUpClick}>Change into Uppercase</button>
+<button disabled={text.length===0} className="btn btn-primary ms-2 mt-1 " onClick={lowerCase}>Change into Lowercase</button>
+<button disabled={text.length===0} className="btn btn-warning ms-2 mt-1" onClick={nks}>Remove Extra Space</button>
+<button disabled={text.length===0} className="btn btn-danger ms-2 mt-1" onClick={emt}>Clear Text</button>
 </div>
    <div className="container">
     <h3 className='mt-3'>Text Summary</h3>
